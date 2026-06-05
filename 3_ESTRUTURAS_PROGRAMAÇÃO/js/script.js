@@ -86,4 +86,71 @@ if(user === "Maria") {
 console.log(user === "Rafael", user === "Maria");
 
 // 8 - Else
-cons
+ const loggedIn = false
+ 
+ if(loggedIn) {
+    console.log("Está autenticado!");
+ } else {
+    console.log("Não está autenticado!");
+ }
+
+ const q = 10
+ const w = 15
+
+ if(q > 5 && w > 20) {
+    console.log("Números mais altos")
+   }  else {
+        console.log("Os números não são mais altos")
+    }
+
+// 9 - Else if
+if(1 > 2) {
+    console.log("Teste");
+}
+ else if(2 > 3) {
+    console.log("Teste 2");
+} 
+else if(3 > 2) {
+    console.log("Teste 3");
+}
+
+const userName = "Rafael"
+const userAge = 20
+
+if (userName === "Matheus") {
+    console.log("Bem vindo, Matheus")
+} else if (userName === "Rafael" && userAge === 20) {
+    console.log("Olá, Rafael! Você tem 20 anos!")
+} else {
+    console.log("Nenhuma das condições é verdadeira")
+}
+
+// 10 - While
+
+let p = 0;
+
+while (p < 5) {
+    console.log(`Repetindo ${p}`);
+    p = p + 1;
+}
+
+// Looo Infinito
+
+// let x = 10
+
+// while(x > 5) {
+//     console.log("Repetindo Infinitamente")
+// }
+
+// 11 - do while
+let o = 10
+
+do {
+    console.log(`Valor de o: ${o}`);
+    o--
+} while(o > 1);
+
+// // 12 - For
+// for (let t = 0; t < 10; t++) {
+//     console.log("Repetindo algo...")
+// }
