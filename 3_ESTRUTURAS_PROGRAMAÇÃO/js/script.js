@@ -154,3 +154,74 @@ do {
 // for (let t = 0; t < 10; t++) {
 //     console.log("Repetindo algo...")
 // }
+
+let r = 10
+
+for(r; r > 0; r = r - 1) {
+    console.log("O r está diminuindo")
+}
+
+// 13 - Identação
+for(let u = 0; u < 10; u++) {
+    if(u * 2 > 10) {
+        console.log(`Maior que 10! ${u}`)
+    } else {
+        if(u / 2 === 0) {
+            console.log("deu 0")
+        }
+    }
+}
+
+// 14 - Break
+for (let g = 20; g > 10; g--) {
+    console.log(`o valor de g é: ${g}`);
+
+    if(g === 12) (
+       console.log("O g é 12!") 
+    )
+}
+
+// 15 - Continue
+for(let s = 0; s < 10; s = s + 1) {
+    // Operador resto = %
+    if(s % 2 === 0) {
+     console.log("Número par!");   
+     continue;
+    }
+
+    console.log(s);
+}
+
+// 16 - Switch
+const job = "Zé Ninguém"
+
+switch (job) {
+    case "Programador":
+        console.log("Você é um programador!");
+        break;
+        case "Advogado":
+        console.log("Você é um Advogado");
+        break;
+        case "Engenheiro Civíl":
+            console.log("Você é um engenheiro civíl");
+            break;
+            case "Médico":
+                console.log("Você é um médico");
+                break;
+                default:
+                    console.log("Profissão não encontrada");
+}
+
+// Switch "Errado"
+const l = 100;
+
+switch(l) {
+    case 200:
+        console.log("L é 200!");
+        case 100:
+            console.log ("L é 100!");
+        case 10:
+            console.log ("L é 10!");
+            default:
+                console.log("L não foi encontrado");
+}
