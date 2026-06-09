@@ -221,3 +221,45 @@ const posts = [
 posts.forEach((post) => {
     console.log(`Exibindo post: ${post.title}, da categoria: ${post.category}`);
 });
+
+// 16 - Includes
+const brands = ["BMW", "VW", "Fiat"]
+
+console.log(brands.includes("Fiat"));
+
+console.log(brands.includes("PORSHE"));
+
+if(brands.includes("BMW")) {
+    console.log("Há carros da marca BMW!");
+}
+
+// 17 - Reverse
+const reverseTeste = [1, 2, 3, 4, 5]
+
+reverseTeste.reverse();
+
+console.log(reverseTeste);
+
+// 18 - Trim
+const trimTest = "  testando \n  "
+
+console.log(trimTest);
+
+console.log(trimTest.trim());
+
+console.log(trimTest.length);
+
+console.log(trimTest.trim().length);
+
+// 19 - padstart
+const testePadStart = "1"
+
+const newNumber = testePadStart.padStart(4, "0");
+
+console.log(testePadStart);
+
+console.log(newNumber);
+
+const testePadEnd = newNumber.padEnd(10, "0");
+
+console.log(testePadEnd);
