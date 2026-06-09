@@ -263,3 +263,43 @@ console.log(newNumber);
 const testePadEnd = newNumber.padEnd(10, "0");
 
 console.log(testePadEnd);
+
+// 20 - Split
+const frase = "O rato roeu a roupa do rei de roma"
+
+const arrayDaFrase = frase.split(" ")
+
+console.log(arrayDaFrase);
+
+// 21 - Join
+const fraseDenovo = arrayDaFrase.join(" ")
+
+console.log(fraseDenovo)
+
+const itensParaComprar = ["Mouse", "Teclado", "Monitor"]
+
+const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(", ")}.`
+
+console.log(fraseDeCompra);
+
+// 22 - Repeat
+const palavra = "Testando "
+
+console.log(palavra.repeat(5));
+
+// 23 - Rest Operator
+
+const somaInfinita = (...args) => {
+
+let total = 0
+
+for (let i = 0; i < args.length; i++) {
+    total += args[i];
+}
+
+return total;
+};
+
+console.log(somaInfinita(1, 2 ,3));
+
+console.log(somaInfinita(1, 23 ,45 ,765 ,574 ,45 ,3245 ,65))
