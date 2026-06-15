@@ -91,3 +91,33 @@ console.log(`O valor da soma é: ${value}`);
 });
 
 console.log("teste async")
+
+// 8 - Async await
+function resolveComDelay() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+        resolve("Resolveu a Promise");
+        }, 2000);
+    });
+}
+
+async function chamadaAsync() {
+    console.log("Chamando a Promise, e esperando o resultado")
+    const result = await resolveComDelay();
+    console.log(`O resultado chegou ${result}`);
+}
+
+chamadaAsync();
+
+// 9 - Generators
+function* generator() {
+ yield 1;
+ yield 2;
+ yield 3;
+}
+
+const gen = generator();
+
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
